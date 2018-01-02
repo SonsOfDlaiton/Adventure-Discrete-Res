@@ -1,0 +1,22 @@
+Tutorials[
+	text="As provas do ENEM chegaram..."
+	keys={"a","arrow_up"}
+	duration=3000
+]
+
+name="ENEM Dia 1"
+size={60,90}
+sprite="enem_1"
+life=300
+imunityTime=300
+
+events[
+	reincarnation={{"ENEM Dia 2","enem_2",300,1},1,0}				//nome,sprite,vida,quantidade restante
+	summon={{"nanokid",2,5,"enem_nano_kid","false","30,60"},20,300} //nome, minimo, maximo, sprite, desenhar letras, tamanho
+	summon={{"nanokid",4,6,"enem_nano_kid","false","30,60"},15,150}
+	shield={{99,"false"},1,300}										//porcentagem de bloqueio de dano, bloquear so projeteis
+	questions={{5,1,"letters","{1,0,0}","{0,1,0}",0,"true"},28,300} //quantidade, quantidade correta, sprite, cor errada, cor correta, dano aplicado no inimigo, vuneravel?
+	questions={{5,1,"letters","{1,0,0}","{0,1,0}",0,"true"},40,150}
+	gate={{0,80,"door",10,10},30,300} 								//posicao relativa minima, posicao relativa maxima, sprite, numero de sprites, dano no jogador
+	gate={{0,80,"door",10,20},18,100}
+]
