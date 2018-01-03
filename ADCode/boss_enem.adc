@@ -7,16 +7,23 @@ Tutorials[
 name="ENEM Dia 1"
 size={60,90}
 sprite="enem_1"
-life=300
-imunityTime=300
+life=150
+imunityTime=100
 
 events[
-	reincarnation={{"ENEM Dia 2","enem_2",300,1},1,0}				//nome,sprite,vida,quantidade restante
-	summon={{"nanokid",2,5,"enem_nano_kid","false","30,60"},20,300} //nome, minimo, maximo, sprite, desenhar letras, tamanho
-	summon={{"nanokid",4,6,"enem_nano_kid","false","30,60"},15,150}
-	shield={{99,"false"},1,300}										//porcentagem de bloqueio de dano, bloquear so projeteis
-	questions={{5,1,"letters","{1,0,0}","{0,1,0}",0,"true"},28,300} //quantidade, quantidade correta, sprite, cor errada, cor correta, dano aplicado no inimigo, vuneravel?
-	questions={{5,1,"letters","{1,0,0}","{0,1,0}",0,"true"},40,150}
-	gate={{0,80,"door",10,10},30,300} 								//posicao relativa minima, posicao relativa maxima, sprite, numero de sprites, dano no jogador
-	gate={{0,80,"door",10,20},18,100}
+	reincarnation={{"ENEM Dia 2","enem_2",150,1},1,0,0}			
+	summon={{"nanokid",2,5,5,"enem_nano_kid","false",{30,60}},20,150,300}
+	summon={{"nanokid",4,6,5,"enem_nano_kid","false",{30,60}},15,0,150}
+
+
+	//TODO implement V
+	shield={{99,"false"},1,300}	//porcentagem de bloqueio de dano, bloquear so projeteis
+
+	//quest: quantidade, quantidade correta, sprite, cor errada, cor correta, dano no inimigo, vuneravel?
+	questions={{5,1,"letters",{1,0,0},{0,1,0},0,"true"},28,150,300} 
+	questions={{5,1,"letters",{1,0,0},{0,1,0},0,"true"},40,0,150}
+
+	//GATE: posicao relativa minima, posicao relativa maxima, sprite, numero de sprites, dano no jogador
+	gate={{0,80,"door",10,10},30,100,300}
+	gate={{0,80,"door",10,20},18,0,100}
 ]
