@@ -2,6 +2,9 @@
 #load("Texture","backCloud","/backgrounds/cloud",4) 
 #load("Texture","DECOMTower","/backgrounds/0.png",1) 
 
+cam[
+	autospeed=0
+]
 
 background[
 	name="backTree"
