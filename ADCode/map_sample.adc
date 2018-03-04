@@ -1,6 +1,6 @@
-#load{"Texture","tree","/backgrounds/tree.png",1}
-#load{"Texture","trees","/backgrounds/trees.png",1} 
-#load{"Texture","cloud","/backgrounds/cloud",4}
+#load{"Texture","tree","Textures/backgrounds/tree.png",1}
+#load{"Texture","trees","Textures/backgrounds/trees.png",1} 
+#load{"Texture","cloud","Textures/backgrounds/cloud",4}
 
 cam[
 	autospeed=0
