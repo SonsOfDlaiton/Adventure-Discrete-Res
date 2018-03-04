@@ -1,37 +1,61 @@
-#load("Texture","backTree","/backgrounds/arvores.png",1) 
-#load("Texture","backCloud","/backgrounds/cloud",4) 
-#load("Texture","DECOMTower","/backgrounds/0.png",1) 
+#load{"Texture","tree","/backgrounds/tree.png",1}
+#load{"Texture","trees","/backgrounds/trees.png",1} 
+#load{"Texture","cloud","/backgrounds/cloud",4}
 
 cam[
 	autospeed=0
 ]
 
 background[
-	name="backTree"
+	name="tree"
 	nspr=1
 	static="false"
-	p0={20,20}
-	p0={40,40}
-	deltaX=50
-	deltaY=50
-	depth=2
-	speed={20,0}
+	p0={0,15}
+	p1={10,45}
+	deltaX=-100
+	deltaY=0
+	depth=0
+	speed={80,10}
 ]
 
 background[
-	name="backCloud"
+	name="trees"
+	nspr=1
+	static="false"
+	p0={0,20}
+	p1={20,60}
+	deltaX=0
+	deltaY=10
+	depth=-40
+	speed={10,100}
+]
+
+background[
+	name="cloud"
 	nspr=4
 	static="false"
-	p0={20,20}
-	p0={40,40}
-	deltaX=50
-	deltaY=50
-	depth=2
-	speed={20,0}
+	p0={0,85}
+	p1={10,100}
+	deltaX=-200
+	deltaY=5
+	depth=-70
+	speed={70,40}
 ]
 
 background[
-	name="DECOMTower"
+	name="cloud"
+	nspr=4
+	static="false"
+	p0={0,85}
+	p1={25,105}
+	deltaX=-100
+	deltaY=5
+	depth=-80
+	speed={50,20}
+]
+
+background[
+	name="background0"
 	nspr=1
 	static="true"
 ]
