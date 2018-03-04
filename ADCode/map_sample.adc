@@ -13,6 +13,7 @@ background[
 	p0={20,20}
 	p0={40,40}
 	deltaX=50
+	deltaY=50
 	depth=2
 	speed={20,0}
 ]
@@ -24,6 +25,7 @@ background[
 	p0={20,20}
 	p0={40,40}
 	deltaX=50
+	deltaY=50
 	depth=2
 	speed={20,0}
 ]

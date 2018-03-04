@@ -7,7 +7,7 @@ Tutorials[
 name="ENEM Dia 1"
 size={60,90}
 sprite="enem_1"
-life=1
+life=10
 imunityTime=100
 
 events[
